@@ -20,10 +20,10 @@
 
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
-            <ref bean="fastJsonHttpMessageConverter"></ref>
             <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
             <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
             <ref bean="stringHttpMessageConverter"/>
+            <ref bean="fastJsonHttpMessageConverter"></ref>
         </mvc:message-converters>
     </mvc:annotation-driven>
     <!--stringHttpMessageConverter转换器-->

@@ -18,10 +18,6 @@
         <property name="maxActive" value="${jdbc.maxActive}" />
         <property name="minIdle" value="${jdbc.minIdle}" />
     </bean>
-    <bean id="propertyConfigurer"
-          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="locations" value="classpath*:properties/*.properties" />
-    </bean>
     <!-- 让spring管理sqlsessionfactory 使用mybatis和spring整合包中的 -->
     <!-- SqlSessionFactory -->
     <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
