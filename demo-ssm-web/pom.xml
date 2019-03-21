@@ -31,4 +31,13 @@
             <artifactId>spring-test</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>resources</directory>
+                <includes>*.properties</includes>
+            </resource>
+        </resources>
+    </build>
 </project>
