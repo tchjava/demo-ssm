@@ -17,7 +17,6 @@
       <module>demo-ssm-service</module>
       <module>demo-ssm-common</module>
       <module>demo-ssm-controller</module>
-      <module>demo-ssm-common</module>
     </modules>
     <packaging>pom</packaging>
 
