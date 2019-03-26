@@ -4,9 +4,11 @@ import com.gaby.mapper.dao.StudentDao;
 import com.gaby.mybatis.auto.stu.entity.Student;
 import com.gaby.mybatis.base.service.impl.BaseServiceImpl;
 import com.gaby.service.stu.CustomStudentService;
+import com.gaby.stu.model.student.list.Item;
 import com.gaby.stu.model.student.query.Response;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -18,5 +20,9 @@ public class CustomStudentServiceImpl extends BaseServiceImpl<StudentDao, Studen
         return this.baseMapper.query(map);
     }
 
+    @Override
+    public List<Item> list() {
+        return this.baseMapper.list();
+    }
 
 }

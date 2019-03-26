@@ -28,5 +28,8 @@ public class StudentController extends BaseController {
         return studentFacade.query(request);
     }
 
-
+    @RequestMapping("list")
+    public com.gaby.stu.model.student.list.Response list(){
+        return studentFacade.list();
+    }
 }

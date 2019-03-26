@@ -15,4 +15,12 @@
             AND s_name=#{item.name}
         </if>
     </select>
+    <select id="list" resultType="com.gaby.stu.model.student.list.Item">
+        SELECT
+          s_id AS id,
+          s_name AS `name`,
+          s_sex AS sex
+        FROM
+          student
+    </select>
 </mapper>

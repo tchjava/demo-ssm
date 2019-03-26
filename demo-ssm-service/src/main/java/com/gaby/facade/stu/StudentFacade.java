@@ -5,4 +5,6 @@ import com.gaby.stu.model.student.query.Response;
 
 public interface StudentFacade {
     Response query(Request request);
+
+    com.gaby.stu.model.student.list.Response list();
 }
