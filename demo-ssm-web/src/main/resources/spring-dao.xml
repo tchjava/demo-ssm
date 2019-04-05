@@ -33,7 +33,7 @@
         <!-- 自动扫描 Xml 文件位置 -->
         <property name="mapperLocations">
             <list>
-                <value>classpath*:com/gaby/mapper/xml/StudentMapper.xml</value>
+                <value>classpath*:com/gaby/**/mapper/xml/**/*.xml</value>
             </list>
         </property>
         <!--<property name="typeAliasesPackage" value="com.pinyougou.**.pojo"/>-->
